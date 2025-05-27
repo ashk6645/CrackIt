@@ -71,8 +71,8 @@ Just follow the [Contribution Guidelines](./CONTRIBUTING.md) (coming soon) or op
 
 If you found this repository helpful:
 
-✅ **Star** this repo to keep it visible
-🔗 **Share** it with friends, classmates, and coding groups
+✅ **Star** this repo to keep it visible.                 
+🔗 **Share** it with friends, classmates, and coding groups.     
 💬 **Join discussions**, leave feedback, and help others crack it!
 
 ---
