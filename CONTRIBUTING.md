@@ -29,7 +29,7 @@ Click the fork button at the top-right of the repository to create your own copy
 ### 2️⃣ **Clone Your Forked Repository**  
 Run the following command:  
 ```bash
-git clone https://github.com/YOUR-USERNAME/CrackIt.git
+git clone https://github.com/ashk6645/CrackIt.git
 cd CrackIt
 ```
 
