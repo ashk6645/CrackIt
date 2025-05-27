@@ -1,4 +1,4 @@
-````markdown
+
 # 🚀 CrackIt - The Ultimate Placement Preparation Hub
 
 Welcome to **CrackIt** — your **go-to repository** for everything you need to crack coding interviews, aptitude rounds, HR interviews, and land your dream job! 🎯
