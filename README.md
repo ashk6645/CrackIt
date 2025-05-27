@@ -43,9 +43,13 @@ Whether you're just starting out or polishing for your final interviews — this
 ## ✨ How to Use This Repository
 
 🔹 **Check Daily Updates**: Come back often — new content is added regularly!
+
 🔹 **Follow Topic Roadmaps**: Move through topics like DSA, OS, DBMS, CN, etc., one step at a time.
+
 🔹 **Review Interview Experiences**: Learn from those who’ve done it.
+
 🔹 **Download & Practice**: Many folders are ready to use offline too!
+
 🔹 **Use Discussions**: Connect with others, share tips, ask questions.
 
 ---
