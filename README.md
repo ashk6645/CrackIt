@@ -79,7 +79,7 @@ If you found this repository helpful:
 
 ## 📬 Connect With Me
 
-* 🌐 [Portfolio](https://ashk6645.github.io)
+* 🌐 [Portfolio](https://ashk.vercel.app)
 * 🐙 [GitHub](https://github.com/ashk6645/CrackIt)
 * 💼 [LinkedIn](https://linkedin.com/in/ashk6645)
 * 📫 DM me for collabs or queries!
