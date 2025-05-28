@@ -12,7 +12,7 @@ This is a **continuously updated** collection of high-quality resources curated 
 Finding reliable and structured placement resources can be overwhelming. This repo is designed to be your **one-stop solution**, featuring:
 
 ✅ Topic-wise **DSA (Data Structures & Algorithms)** problems  
-✅ **Coding practice sets** from LeetCode, CodeChef, HackerRank, GFG 
+✅ **Coding practice sets** from LeetCode, CodeChef, HackerRank, GFG   
 ✅ **Company-wise interview experiences** and strategies  
 ✅ Resume & Cover Letter **templates that work**  
 ✅ Logical, verbal, and quantitative **Aptitude** questions  
