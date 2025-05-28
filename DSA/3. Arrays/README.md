@@ -10,6 +10,10 @@ Array: [10] [20] [30] [40] [50]
          ↑   ↑    ↑     ↑     ↑
       Box 0 Box 1 Box 2 Box 3 Box 4
 ```
+````markdown
+Arrays are used to store multiple values in a single variable instead of declaring separate variables.
+
+````
 
 ## Memory Layout
 
@@ -22,6 +26,19 @@ Index:           0     1     2     3     4
 ```
 
 This contiguous storage enables **O(1) random access** - you can jump to any element instantly!
+
+## ⚙️ Characteristics:
+
+| Feature               | Description                                                                                                    |
+| --------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Homogeneous**       | Stores elements of the **same data type**.                                                                     |
+| **Fixed Size**        | Size is **defined at creation** and cannot be changed.                                                         |
+| **Indexed Access**    | Provides **fast (O(1))** access to elements via index.                                                         |
+| **Memory Efficient**  | Stored **contiguously**, helping with **CPU caching** and performance.                                         |
+| **Resizing Overhead** | Cannot be resized; for dynamic sizing, use `ArrayList` which internally **doubles** when capacity is exceeded. |
+| **Reusability**       | Arrays can be **passed to methods** and **returned** from methods.                                             |
+| **Space Efficient**   | Efficient for storing a known number of values.                                                                |
+
 
 ## Array Operations and Complexities
 
