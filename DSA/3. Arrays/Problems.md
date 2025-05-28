@@ -34,8 +34,9 @@ Use a hash map to store complements. For each number, check if its complement ex
 </details>
 
 <details>
-<summary>✅ Solution</summary>
+<summary>✅ Solution (Python/Java/C++)</summary>
 
+#### Python
 ```python
 def two_sum(nums, target):
     num_to_index = {}
@@ -49,6 +50,40 @@ def two_sum(nums, target):
     return []
 
 # Time: O(n), Space: O(n)
+```
+
+#### Java
+```java
+public int[] twoSum(int[] nums, int target) {
+    Map<Integer, Integer> map = new HashMap<>();
+    for (int i = 0; i < nums.length; i++) {
+        int complement = target - nums[i];
+        if (map.containsKey(complement)) {
+            return new int[] { map.get(complement), i };
+        }
+        map.put(nums[i], i);
+    }
+    return new int[]{};
+}
+
+// Time: O(n), Space: O(n)
+```
+
+#### C++
+```cpp
+vector<int> twoSum(vector<int>& nums, int target) {
+    unordered_map<int, int> num_to_index;
+    for (int i = 0; i < nums.size(); ++i) {
+        int complement = target - nums[i];
+        if (num_to_index.count(complement)) {
+            return {num_to_index[complement], i};
+        }
+        num_to_index[nums[i]] = i;
+    }
+    return {};
+}
+
+// Time: O(n), Space: O(n)
 ```
 </details>
 
@@ -76,8 +111,9 @@ Use two pointers: one for iteration, one for placing unique elements.
 </details>
 
 <details>
-<summary>✅ Solution</summary>
+<summary>✅ Solution (Python/Java/C++)</summary>
 
+#### Python
 ```python
 def remove_duplicates(nums):
     if not nums:
@@ -93,6 +129,39 @@ def remove_duplicates(nums):
     return write_index
 
 # Time: O(n), Space: O(1)
+```
+
+#### Java
+```java
+public int removeDuplicates(int[] nums) {
+    if (nums.length == 0) return 0;
+    int writeIndex = 1;
+    for (int readIndex = 1; readIndex < nums.length; readIndex++) {
+        if (nums[readIndex] != nums[readIndex - 1]) {
+            nums[writeIndex] = nums[readIndex];
+            writeIndex++;
+        }
+    }
+    return writeIndex;
+}
+
+// Time: O(n), Space: O(1)
+```
+
+#### C++
+```cpp
+int removeDuplicates(vector<int>& nums) {
+    if (nums.empty()) return 0;
+    int writeIndex = 1;
+    for (int readIndex = 1; readIndex < nums.size(); ++readIndex) {
+        if (nums[readIndex] != nums[readIndex - 1]) {
+            nums[writeIndex++] = nums[readIndex];
+        }
+    }
+    return writeIndex;
+}
+
+// Time: O(n), Space: O(1)
 ```
 </details>
 
@@ -121,8 +190,9 @@ At each position, decide whether to extend existing subarray or start new one.
 </details>
 
 <details>
-<summary>✅ Solution</summary>
+<summary>✅ Solution (Python/Java/C++)</summary>
 
+#### Python
 ```python
 def max_subarray(nums):
     max_sum = float('-inf')
@@ -135,6 +205,36 @@ def max_subarray(nums):
     return max_sum
 
 # Time: O(n), Space: O(1)
+```
+
+#### Java
+```java
+public int maxSubArray(int[] nums) {
+    int maxSum = nums[0];
+    int currentSum = nums[0];
+    for (int i = 1; i < nums.length; i++) {
+        currentSum = Math.max(nums[i], currentSum + nums[i]);
+        maxSum = Math.max(maxSum, currentSum);
+    }
+    return maxSum;
+}
+
+// Time: O(n), Space: O(1)
+```
+
+#### C++
+```cpp
+int maxSubArray(vector<int>& nums) {
+    int maxSum = nums[0];
+    int currentSum = nums[0];
+    for (int i = 1; i < nums.size(); ++i) {
+        currentSum = max(nums[i], currentSum + nums[i]);
+        maxSum = max(maxSum, currentSum);
+    }
+    return maxSum;
+}
+
+// Time: O(n), Space: O(1)
 ```
 </details>
 
@@ -162,8 +262,9 @@ Reverse the entire array, then reverse first k and last n-k elements.
 </details>
 
 <details>
-<summary>✅ Solution</summary>
+<summary>✅ Solution (Python/Java/C++)</summary>
 
+#### Python
 ```python
 def rotate(nums, k):
     n = len(nums)
@@ -183,6 +284,50 @@ def rotate(nums, k):
     reverse(k, n - 1)
 
 # Time: O(n), Space: O(1)
+```
+
+#### Java
+```java
+public void rotate(int[] nums, int k) {
+    int n = nums.length;
+    k = k % n;
+    reverse(nums, 0, n - 1);
+    reverse(nums, 0, k - 1);
+    reverse(nums, k, n - 1);
+}
+
+private void reverse(int[] nums, int start, int end) {
+    while (start < end) {
+        int temp = nums[start];
+        nums[start] = nums[end];
+        nums[end] = temp;
+        start++;
+        end--;
+    }
+}
+
+// Time: O(n), Space: O(1)
+```
+
+#### C++
+```cpp
+void reverse(vector<int>& nums, int start, int end) {
+    while (start < end) {
+        swap(nums[start], nums[end]);
+        start++;
+        end--;
+    }
+}
+
+void rotate(vector<int>& nums, int k) {
+    int n = nums.size();
+    k = k % n;
+    reverse(nums, 0, n - 1);
+    reverse(nums, 0, k - 1);
+    reverse(nums, k, n - 1);
+}
+
+// Time: O(n), Space: O(1)
 ```
 </details>
 
@@ -211,8 +356,9 @@ Track minimum price seen so far and maximum profit at each step.
 </details>
 
 <details>
-<summary>✅ Solution</summary>
+<summary>✅ Solution (Python/Java/C++)</summary>
 
+#### Python
 ```python
 def max_profit(prices):
     min_price = float('inf')
@@ -227,6 +373,42 @@ def max_profit(prices):
     return max_profit
 
 # Time: O(n), Space: O(1)
+```
+
+#### Java
+```java
+public int maxProfit(int[] prices) {
+    int minPrice = Integer.MAX_VALUE;
+    int maxProfit = 0;
+    for (int price : prices) {
+        if (price < minPrice) {
+            minPrice = price;
+        } else if (price - minPrice > maxProfit) {
+            maxProfit = price - minPrice;
+        }
+    }
+    return maxProfit;
+}
+
+// Time: O(n), Space: O(1)
+```
+
+#### C++
+```cpp
+int maxProfit(vector<int>& prices) {
+    int minPrice = INT_MAX;
+    int maxProfit = 0;
+    for (int price : prices) {
+        if (price < minPrice) {
+            minPrice = price;
+        } else if (price - minPrice > maxProfit) {
+            maxProfit = price - minPrice;
+        }
+    }
+    return maxProfit;
+}
+
+// Time: O(n), Space: O(1)
 ```
 </details>
 
@@ -256,8 +438,9 @@ Sort array first, then use two pointers for each fixed element.
 </details>
 
 <details>
-<summary>✅ Solution</summary>
+<summary>✅ Solution (Python/Java/C++)</summary>
 
+#### Python
 ```python
 def three_sum(nums):
     nums.sort()
@@ -292,7 +475,65 @@ def three_sum(nums):
     
     return result
 
-# Time: O(n²), Space: O(1)
+# Time: O(n^2), Space: O(1)
+```
+
+#### Java
+```java
+public List<List<Integer>> threeSum(int[] nums) {
+    Arrays.sort(nums);
+    List<List<Integer>> result = new ArrayList<>();
+    int n = nums.length;
+    for (int i = 0; i < n - 2; i++) {
+        if (i > 0 && nums[i] == nums[i - 1]) continue;
+        int left = i + 1, right = n - 1;
+        while (left < right) {
+            int total = nums[i] + nums[left] + nums[right];
+            if (total == 0) {
+                result.add(Arrays.asList(nums[i], nums[left], nums[right]));
+                while (left < right && nums[left] == nums[left + 1]) left++;
+                while (left < right && nums[right] == nums[right - 1]) right--;
+                left++;
+                right--;
+            } else if (total < 0) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+    }
+    return result;
+}
+// Time: O(n^2), Space: O(1)
+```
+
+#### C++
+```cpp
+vector<vector<int>> threeSum(vector<int>& nums) {
+    sort(nums.begin(), nums.end());
+    vector<vector<int>> result;
+    int n = nums.size();
+    for (int i = 0; i < n - 2; ++i) {
+        if (i > 0 && nums[i] == nums[i - 1]) continue;
+        int left = i + 1, right = n - 1;
+        while (left < right) {
+            int total = nums[i] + nums[left] + nums[right];
+            if (total == 0) {
+                result.push_back({nums[i], nums[left], nums[right]});
+                while (left < right && nums[left] == nums[left + 1]) left++;
+                while (left < right && nums[right] == nums[right - 1]) right--;
+                left++;
+                right--;
+            } else if (total < 0) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+    }
+    return result;
+}
+// Time: O(n^2), Space: O(1)
 ```
 </details>
 
@@ -322,8 +563,9 @@ Use two pointers from ends. Move pointer with smaller height inward.
 </details>
 
 <details>
-<summary>✅ Solution</summary>
+<summary>✅ Solution (Python/Java/C++)</summary>
 
+#### Python
 ```python
 def max_area(height):
     left, right = 0, len(height) - 1
@@ -343,6 +585,46 @@ def max_area(height):
     return max_water
 
 # Time: O(n), Space: O(1)
+```
+
+#### Java
+```java
+public int maxArea(int[] height) {
+    int left = 0, right = height.length - 1;
+    int maxWater = 0;
+    while (left < right) {
+        int width = right - left;
+        int currentHeight = Math.min(height[left], height[right]);
+        maxWater = Math.max(maxWater, width * currentHeight);
+        if (height[left] < height[right]) {
+            left++;
+        } else {
+            right--;
+        }
+    }
+    return maxWater;
+}
+// Time: O(n), Space: O(1)
+```
+
+#### C++
+```cpp
+int maxArea(vector<int>& height) {
+    int left = 0, right = height.size() - 1;
+    int maxWater = 0;
+    while (left < right) {
+        int width = right - left;
+        int currentHeight = min(height[left], height[right]);
+        maxWater = max(maxWater, width * currentHeight);
+        if (height[left] < height[right]) {
+            left++;
+        } else {
+            right--;
+        }
+    }
+    return maxWater;
+}
+// Time: O(n), Space: O(1)
 ```
 </details>
 
@@ -371,8 +653,9 @@ Calculate prefix products, then multiply with suffix products in second pass.
 </details>
 
 <details>
-<summary>✅ Solution</summary>
+<summary>✅ Solution (Python/Java/C++)</summary>
 
+#### Python
 ```python
 def product_except_self(nums):
     n = len(nums)
@@ -391,6 +674,43 @@ def product_except_self(nums):
     return result
 
 # Time: O(n), Space: O(1) extra
+```
+
+#### Java
+```java
+public int[] productExceptSelf(int[] nums) {
+    int n = nums.length;
+    int[] result = new int[n];
+    result[0] = 1;
+    for (int i = 1; i < n; i++) {
+        result[i] = result[i - 1] * nums[i - 1];
+    }
+    int suffixProduct = 1;
+    for (int i = n - 1; i >= 0; i--) {
+        result[i] *= suffixProduct;
+        suffixProduct *= nums[i];
+    }
+    return result;
+}
+// Time: O(n), Space: O(1) extra
+```
+
+#### C++
+```cpp
+vector<int> productExceptSelf(vector<int>& nums) {
+    int n = nums.size();
+    vector<int> result(n, 1);
+    for (int i = 1; i < n; ++i) {
+        result[i] = result[i - 1] * nums[i - 1];
+    }
+    int suffixProduct = 1;
+    for (int i = n - 1; i >= 0; --i) {
+        result[i] *= suffixProduct;
+        suffixProduct *= nums[i];
+    }
+    return result;
+}
+// Time: O(n), Space: O(1) extra
 ```
 </details>
 
@@ -419,8 +739,9 @@ Use binary search. Compare middle element with right element to determine which 
 </details>
 
 <details>
-<summary>✅ Solution</summary>
+<summary>✅ Solution (Python/Java/C++)</summary>
 
+#### Python
 ```python
 def find_min(nums):
     left, right = 0, len(nums) - 1
@@ -438,6 +759,40 @@ def find_min(nums):
     return nums[left]
 
 # Time: O(log n), Space: O(1)
+```
+
+#### Java
+```java
+public int findMin(int[] nums) {
+    int left = 0, right = nums.length - 1;
+    while (left < right) {
+        int mid = (left + right) / 2;
+        if (nums[mid] > nums[right]) {
+            left = mid + 1;
+        } else {
+            right = mid;
+        }
+    }
+    return nums[left];
+}
+// Time: O(log n), Space: O(1)
+```
+
+#### C++
+```cpp
+int findMin(vector<int>& nums) {
+    int left = 0, right = nums.size() - 1;
+    while (left < right) {
+        int mid = (left + right) / 2;
+        if (nums[mid] > nums[right]) {
+            left = mid + 1;
+        } else {
+            right = mid;
+        }
+    }
+    return nums[left];
+}
+// Time: O(log n), Space: O(1)
 ```
 </details>
 
@@ -466,8 +821,9 @@ Use prefix sum and hash map. For each prefix sum, check if (sum - k) exists.
 </details>
 
 <details>
-<summary>✅ Solution</summary>
+<summary>✅ Solution (Python/Java/C++)</summary>
 
+#### Python
 ```python
 def subarray_sum(nums, k):
     count = 0
@@ -487,6 +843,42 @@ def subarray_sum(nums, k):
     return count
 
 # Time: O(n), Space: O(n)
+```
+
+#### Java
+```java
+public int subarraySum(int[] nums, int k) {
+    int count = 0, prefixSum = 0;
+    Map<Integer, Integer> sumCount = new HashMap<>();
+    sumCount.put(0, 1);
+    for (int num : nums) {
+        prefixSum += num;
+        if (sumCount.containsKey(prefixSum - k)) {
+            count += sumCount.get(prefixSum - k);
+        }
+        sumCount.put(prefixSum, sumCount.getOrDefault(prefixSum, 0) + 1);
+    }
+    return count;
+}
+// Time: O(n), Space: O(n)
+```
+
+#### C++
+```cpp
+int subarraySum(vector<int>& nums, int k) {
+    unordered_map<int, int> sumCount;
+    sumCount[0] = 1;
+    int count = 0, prefixSum = 0;
+    for (int num : nums) {
+        prefixSum += num;
+        if (sumCount.count(prefixSum - k)) {
+            count += sumCount[prefixSum - k];
+        }
+        sumCount[prefixSum]++;
+    }
+    return count;
+}
+// Time: O(n), Space: O(n)
 ```
 </details>
 
@@ -517,8 +909,9 @@ Use two pointers with left_max and right_max tracking.
 </details>
 
 <details>
-<summary>✅ Solution</summary>
+<summary>✅ Solution (Python/Java/C++)</summary>
 
+#### Python
 ```python
 def trap(height):
     if not height:
@@ -546,6 +939,61 @@ def trap(height):
 
 # Time: O(n), Space: O(1)
 ```
+
+#### Java
+```java
+public int trap(int[] height) {
+    if (height == null || height.length == 0) return 0;
+    int left = 0, right = height.length - 1;
+    int leftMax = 0, rightMax = 0, water = 0;
+    while (left < right) {
+        if (height[left] < height[right]) {
+            if (height[left] >= leftMax) {
+                leftMax = height[left];
+            } else {
+                water += leftMax - height[left];
+            }
+            left++;
+        } else {
+            if (height[right] >= rightMax) {
+                rightMax = height[right];
+            } else {
+                water += rightMax - height[right];
+            }
+            right--;
+        }
+    }
+    return water;
+}
+// Time: O(n), Space: O(1)
+```
+
+#### C++
+```cpp
+int trap(vector<int>& height) {
+    int left = 0, right = height.size() - 1;
+    int leftMax = 0, rightMax = 0, water = 0;
+    while (left < right) {
+        if (height[left] < height[right]) {
+            if (height[left] >= leftMax) {
+                leftMax = height[left];
+            } else {
+                water += leftMax - height[left];
+            }
+            left++;
+        } else {
+            if (height[right] >= rightMax) {
+                rightMax = height[right];
+            } else {
+                water += rightMax - height[right];
+            }
+            right--;
+        }
+    }
+    return water;
+}
+// Time: O(n), Space: O(1)
+```
 </details>
 
 ---
@@ -564,4 +1012,136 @@ Output: 2.0
 
 **Constraints**:
 - 0 ≤ m ≤ 1000
-- 0 ≤ n ≤
+- 0 ≤ n ≤ 1000
+- Both nums1 and nums2 are sorted independently in non-decreasing order.
+- Median is defined as the middle value or the average of the middle values.
+
+<details>
+<summary>💡 Hint</summary>
+Use binary search on the shorter array. Partition both arrays into left and right halves.
+</details>
+
+<details>
+<summary>✅ Solution (Python/Java/C++)</summary>
+
+#### Python
+```python
+def find_median_sorted_arrays(nums1, nums2):
+    # Ensure nums1 is the smaller array
+    if len(nums1) > len(nums2):
+        nums1, nums2 = nums2, nums1
+    
+    x, y = len(nums1), len(nums2)
+    low, high = 0, x
+    
+    while low <= high:
+        partitionX = (low + high) // 2
+        partitionY = (x + y + 1) // 2 - partitionX
+        
+        # If we are at the extreme left end or right end of the array
+        maxX = float('-inf') if partitionX == 0 else nums1[partitionX - 1]
+        minX = float('inf') if partitionX == x else nums1[partitionX]
+        
+        maxY = float('-inf') if partitionY == 0 else nums2[partitionY - 1]
+        minY = float('inf') if partitionY == y else nums2[partitionY]
+        
+        if maxX <= minY and maxY <= minX:
+            # We have partitioned array at correct places
+            if (x + y) % 2 == 0:
+                return (max(maxX, maxY) + min(minX, minY)) / 2
+            else:
+                return max(maxX, maxY)
+        elif maxX > minY:
+            # We are too far on right side for partitionX. Go on left side.
+            high = partitionX - 1
+        else:
+            # We are too far on left side for partitionX. Go on right side.
+            low = partitionX + 1
+    
+    raise ValueError("Input arrays are not sorted.")
+# Time: O(log(min(m, n))), Space: O(1)
+```
+
+#### Java
+```java
+public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    if (nums1.length > nums2.length) return findMedianSortedArrays(nums2, nums1);
+    int x = nums1.length, y = nums2.length;
+    int low = 0, high = x;
+    while (low <= high) {
+        int partitionX = (low + high) / 2;
+        int partitionY = (x + y + 1) / 2 - partitionX;
+        int maxX = (partitionX == 0) ? Integer.MIN_VALUE : nums1[partitionX - 1];
+        int minX = (partitionX == x) ? Integer.MAX_VALUE : nums1[partitionX];
+        int maxY = (partitionY == 0) ? Integer.MIN_VALUE : nums2[partitionY - 1];
+        int minY = (partitionY == y) ? Integer.MAX_VALUE : nums2[partitionY];
+        if (maxX <= minY && maxY <= minX) {
+            if ((x + y) % 2 == 0) {
+                return ((double)Math.max(maxX, maxY) + Math.min(minX, minY)) / 2;
+            } else {
+                return (double)Math.max(maxX, maxY);
+            }
+        } else if (maxX > minY) {
+            high = partitionX - 1;
+        } else {
+            low = partitionX + 1;
+        }
+    }
+    throw new IllegalArgumentException();
+}
+// Time: O(log(min(m, n))), Space: O(1)
+```
+
+#### C++
+```cpp
+double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+    if (nums1.size() > nums2.size()) return findMedianSortedArrays(nums2, nums1);
+    int x = nums1.size(), y = nums2.size();
+    int low = 0, high = x;
+    while (low <= high) {
+        int partitionX = (low + high) / 2;
+        int partitionY = (x + y + 1) / 2 - partitionX;
+        int maxX = (partitionX == 0) ? INT_MIN : nums1[partitionX - 1];
+        int minX = (partitionX == x) ? INT_MAX : nums1[partitionX];
+        int maxY = (partitionY == 0) ? INT_MIN : nums2[partitionY - 1];
+        int minY = (partitionY == y) ? INT_MAX : nums2[partitionY];
+        if (maxX <= minY && maxY <= minX) {
+            if ((x + y) % 2 == 0) {
+                return (max(maxX, maxY) + min(minX, minY)) / 2.0;
+            } else {
+                return max(maxX, maxY);
+            }
+        } else if (maxX > minY) {
+            high = partitionX - 1;
+        } else {
+            low = partitionX + 1;
+        }
+    }
+    throw invalid_argument("Input arrays are not sorted.");
+}
+// Time: O(log(min(m, n))), Space: O(1)
+```
+</details>
+
+---
+
+## Common Interview Patterns
+- **Two Pointers:** For pair, triplet, and partition problems.
+- **Sliding Window:** For subarray/substring problems.
+- **Prefix Sum:** For range queries and subarray sums.
+- **Sorting & Binary Search:** For searching and order-based problems.
+
+## Common Mistakes
+- Not handling edge cases (empty, single element, all duplicates).
+- Modifying the array when not allowed.
+- Using extra space when in-place is required.
+
+## Interview Tips
+- Clarify if the array is sorted or unsorted.
+- Ask about constraints and expected input size.
+- State your approach and optimize if possible.
+
+## Further Practice
+- [LeetCode Array Problems](https://leetcode.com/tag/array/)
+- [GeeksforGeeks Array Practice](https://www.geeksforgeeks.org/array-data-structure/)
+- [InterviewBit Arrays](https://www.interviewbit.com/courses/programming/topics/arrays/)
