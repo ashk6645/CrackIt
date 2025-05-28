@@ -7,8 +7,8 @@ An array is a collection of elements stored in contiguous memory locations. Thin
 ```
 Index:  0    1    2    3    4
 Array: [10] [20] [30] [40] [50]
-       ↑    ↑    ↑    ↑    ↑
-     Box 0 Box 1 Box 2 Box 3 Box 4
+         ↑   ↑    ↑     ↑     ↑
+      Box 0 Box 1 Box 2 Box 3 Box 4
 ```
 
 ## Memory Layout
