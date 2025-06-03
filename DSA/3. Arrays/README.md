@@ -691,7 +691,7 @@ def trap(height):
 - **Need efficient search** without sorting
 - **Complex relationships** between elements
 
-**Next Topic**: [Strings - Text Processing and Manipulation](../04-Strings/)
+**Next Topic**: [Strings - Text Processing and Manipulation](https://github.com/ashk6645/CrackIt/tree/main/DSA/4.%20Strings)
 
 ---
 
