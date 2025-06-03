@@ -197,6 +197,11 @@ def example_function(arr):
 ```
 
 ## Best, Average, and Worst Case
+While Big O notation primarily focuses on the worst-case scenario (as it guarantees an upper bound on performance), it's important to understand that an algorithm's performance can vary based on the specific input.
+
+Worst Case: The scenario that causes the algorithm to perform the maximum number of operations. This is what Big O typically describes.
+Best Case: The scenario that causes the algorithm to perform the minimum number of operations. Often less useful for practical analysis.
+Average Case: The expected performance of the algorithm for a typical or random input. This can be complex to calculate precisely.
 
 ### Quick Sort Example
 
