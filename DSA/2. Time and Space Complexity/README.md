@@ -399,7 +399,7 @@ def fib_optimized(n):
 
 Now that you understand how to analyze algorithms, you're ready to learn about specific data structures! Each data structure has different complexity characteristics for different operations.
 
-**Next Topic**: [Arrays - The Foundation Data Structure](../03-Arrays/)
+**Next Topic**: [Arrays - The Foundation Data Structure](https://github.com/ashk6645/CrackIt/tree/main/DSA/3.%20Arrays)
 
 ---
 
