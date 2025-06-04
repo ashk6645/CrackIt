@@ -3,10 +3,10 @@
 A linked list is a linear data structure where elements (nodes) are stored non-contiguously in memory. Each node contains two parts: data and a reference (or link) to the next node in the sequence.
 
 ```
-Index:  0    1    2    3    4
+Index:  0      1      2      3      4
 Node:  [A] -> [B] -> [C] -> [D] -> [E]
-         ↑     ↑     ↑     ↑     ↑
-       'A'   'B'   'C'   'D'   'E'
+        ↑      ↑      ↑      ↑      ↑
+       'A'    'B'    'C'    'D'    'E'
 ```
 In this representation, each node points to the next, forming a chain-like structure.
 
