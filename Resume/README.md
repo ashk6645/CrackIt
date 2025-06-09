@@ -11,6 +11,7 @@ Explore the variety of resume designs below, each customized to meet specific in
 3. **Scismic's Recommended CV Template for Biotech and Pharma Jobs** - [View Template](https://www.overleaf.com/latex/templates/scismics-recommended-cv-template-for-biotech-and-pharma-jobs/hbnkjrjnnpjz)
 4. **Jake’s Resume** - [View Template](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)
 5. **Resume Template by Anubhav** - [View Template](https://www.overleaf.com/latex/templates/resume-template-by-anubhav/dhmkrwtksdgy)
+6. **Google Docs Resume Tempelates** - [View Tempelate](https://resumeworded.com/google-docs-resume-templates)
 
 ## How to Use
 
