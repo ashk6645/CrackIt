@@ -26,16 +26,15 @@ Whether you're just starting out or polishing for your final interviews — this
 
 ```bash
 📂 CrackIt/
-│
-├── 📜 README.md                     # How to use this repository
-├── 📁 DSA/                          # Topic-wise problems & patterns
+├── 📁 Aptitude/                     # Logical, Quantitative & Verbal questions
 ├── 📁 Coding/                       # Common coding Qs & editorial-style solutions
+├── 📁 Company-Guides/              # Preparation strategy for specific companies
+├── 📁 DSA/                          # Topic-wise problems & patterns
+├── 📁 HR-Behavioral/                # Soft skills, HR prep, and behavioral Qs
 ├── 📁 Interview-Experiences/       # Real-world stories from top companies
 ├── 📁 Resume/                       # CV & Cover Letter templates and tips
-├── 📁 Aptitude/                     # Logical, Quantitative & Verbal questions
-├── 📁 HR-Behavioral/                # Soft skills, HR prep, and behavioral Qs
-├── 📁 Company-Guides/              # Preparation strategy for specific companies
 └── 📁 Miscellaneous/                # Handpicked blogs, books, videos, and tools
+├── 📜 README.md                     # How to use this repository
 ````
 
 ---
