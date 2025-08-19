@@ -25,6 +25,7 @@ This section contains carefully curated resources that go beyond traditional DSA
 | Book | Author | Topic | Difficulty |
 |------|---------|-------|------------|
 | **Cracking the Coding Interview** | Gayle McDowell | Interview Prep | ⭐⭐⭐ |
+| **Data Structures and Algorithms Made Easy** | Narasimha Karumanchi | DSA | ⭐⭐⭐⭐⭐ |
 | **Introduction to Algorithms (CLRS)** | Cormen, Leiserson, Rivest, Stein | Algorithms | ⭐⭐⭐⭐⭐ |
 | **System Design Interview** | Alex Xu | System Design | ⭐⭐⭐⭐ |
 | **Designing Data-Intensive Applications** | Martin Kleppmann | Distributed Systems | ⭐⭐⭐⭐⭐ |
