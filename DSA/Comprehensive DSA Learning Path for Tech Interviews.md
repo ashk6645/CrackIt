@@ -197,6 +197,7 @@ This structured learning path covers all essential topics and patterns required 
 
 2. **Books:**
    - "Introduction to Algorithms" (CLRS)
+   - "Data Structures and Algorithms Made Easy"
    - "Algorithm Design Manual" by Skiena
    - "Cracking the Coding Interview"
    - "Elements of Programming Interviews"
