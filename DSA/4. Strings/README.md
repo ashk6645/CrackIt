@@ -5,10 +5,10 @@
 A string is a sequence of characters stored in contiguous memory locations. Think of it as a special type of array that specifically stores characters.
 
 ```
-Index:  0    1    2    3    4
+Index:   0    1    2    3    4
 String: [H]  [E]  [L]  [L]  [O]
          ↑    ↑    ↑    ↑    ↑
-      'H'  'E'  'L'  'L'  'O'
+        'H'  'E'  'L'  'L'  'O'
 ```
 
 ## Memory Layout
