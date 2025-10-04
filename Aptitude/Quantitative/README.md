@@ -4,18 +4,18 @@ Track your progress across core quantitative topics that routinely appear in apt
 
 | Topic | Link | Status | Primary Focus |
 |-------|------|--------|----------------|
-| Number Systems | [Open](./Number-Systems.md) | 🟡 Draft | Bases, divisibility, remainders |
-| Percentages | [Open](./Percentages.md) | 🟡 Draft | Percentage change, profit/loss tie-ins |
-| Profit & Loss | [Open](./Profit-Loss.md) | ⚪ Planned | Marked price, discount chains |
-| Time & Work | [Open](./Time-Work.md) | ⚪ Planned | Work-rate algebra, pipes & cistern |
-| Time, Speed & Distance | [Open](./Time-Speed-Distance.md) | ⚪ Planned | Relative speed, trains, boats |
-| Simple & Compound Interest | [Open](./Simple-Compound-Interest.md) | ⚪ Planned | CI/ SI comparison, installments |
-| Ratio & Proportion | [Open](./Ratio-Proportion.md) | ⚪ Planned | Partnership, mixtures |
-| Algebra | [Open](./Algebra.md) | ⚪ Planned | Equations, inequalities |
-| Geometry | [Open](./Geometry.md) | ⚪ Planned | 2D/3D mensuration |
-| Probability | [Open](./Probability.md) | ⚪ Planned | Classical probability, conditional |
-| Permutation & Combination | [Open](./Permutation-Combination.md) | ⚪ Planned | Arrangements with/without repetition |
-| Data Interpretation | [Open](./Data-Interpretation.md) | ⚪ Planned | Tables, charts, caselets |
+| Number Systems | [Open](./Number-Systems.md) | � Ready | Bases, divisibility, remainders |
+| Percentages | [Open](./Percentages.md) | � Ready | Percentage change, profit/loss tie-ins |
+| Profit & Loss | [Open](./Profit-Loss.md) | 🟢 Ready | Marked price, discount chains |
+| Time & Work | [Open](./Time-Work.md) | 🟢 Ready | Work-rate algebra, pipes & cistern |
+| Time, Speed & Distance | [Open](./Time-Speed-Distance.md) | 🟢 Ready | Relative speed, trains, boats |
+| Simple & Compound Interest | [Open](./Simple-Compound-Interest.md) | 🟢 Ready | CI/ SI comparison, installments |
+| Ratio & Proportion | [Open](./Ratio-Proportion.md) | 🟢 Ready | Partnership, mixtures |
+| Algebra | [Open](./Algebra.md) | 🟢 Ready | Equations, inequalities |
+| Geometry | [Open](./Geometry.md) | 🟢 Ready | 2D/3D mensuration |
+| Probability | [Open](./Probability.md) | 🟢 Ready | Classical probability, conditional |
+| Permutation & Combination | [Open](./Permutation-Combination.md) | 🟢 Ready | Arrangements with/without repetition |
+| Data Interpretation | [Open](./Data-Interpretation.md) | 🟢 Ready | Tables, charts, caselets |
 
 ## 📅 Suggested Sprint Cycle
 
